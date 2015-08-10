@@ -20,8 +20,8 @@
 #
 class samba::stig {
     case $::osfamily {
-        'redhat': { include samba::stig::redhat }
-        'darwin': { include samba::stig::darwin }
-        default:  { unimplemented() }
+        'RedHat': { include samba::stig::redhat }
+        'Darwin': { include samba::stig::darwin }
+        default:  { fail "unimplemented on ${::osfamily}" }
     }
 }
