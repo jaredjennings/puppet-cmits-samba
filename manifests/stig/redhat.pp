@@ -33,7 +33,7 @@ class samba::stig::redhat {
 # \implements{unixsrg}{GEN006160,GEN006180,GEN006200}%
 # Control ownership and permissions of \verb!smbpasswd!.
     file { "/etc/samba/smbpasswd":
-        owner => root, group => 0, mode=> 0600,
+        owner => root, group => 0, mode => '0600',
     }
 
 # \implements{unixsrg}{GEN006210}%
