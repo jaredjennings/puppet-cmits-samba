@@ -23,7 +23,7 @@ class samba::stig::redhat {
 # Under RHEL, all Samba configuration goes under \verb!/etc/samba!, so we
 # secure \verb!/etc/samba/smb.conf! not \verb!/etc/smb.conf!.
     file { "/etc/samba/smb.conf":
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
     }
 
 # \implements{unixsrg}{GEN006150}%

@@ -20,7 +20,7 @@ class samba::stig::darwin {
 # \implements{macosxstig}{GEN006100 M6,GEN006140 M6}%
 # Control ownership and permissions of \verb!smb.conf!. 
     file { "/etc/smb.conf":
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
     }
 
 # \implements{macosxstig}{GEN006150 M6}%
